@@ -1,0 +1,295 @@
+{
+	"info": {
+		"_postman_id": "10b9a23a-7a0a-48f3-b7ff-6c30eea324f9",
+		"name": "new-api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get posts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{api_url}}/api/posts",
+					"host": [
+						"{{api_url}}"
+					],
+					"path": [
+						"api",
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get post",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{api_url}}/api/post/1",
+					"host": [
+						"{{api_url}}"
+					],
+					"path": [
+						"api",
+						"post",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete post",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{api_url}}/api/posts/2",
+					"host": [
+						"{{api_url}}"
+					],
+					"path": [
+						"api",
+						"posts",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "store post",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{api_url}}/api/posts?title=new title&body=new body",
+					"host": [
+						"{{api_url}}"
+					],
+					"path": [
+						"api",
+						"posts"
+					],
+					"query": [
+						{
+							"key": "title",
+							"value": "new title"
+						},
+						{
+							"key": "body",
+							"value": "new body"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update post",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{api_url}}/api/post/2?title=new title13&body=new body1",
+					"host": [
+						"{{api_url}}"
+					],
+					"path": [
+						"api",
+						"post",
+						"2"
+					],
+					"query": [
+						{
+							"key": "title",
+							"value": "new title13"
+						},
+						{
+							"key": "body",
+							"value": "new body1"
+						},
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{api_url}}/api/auth/register?name=mostfaswaisi93&email=mostfaswaisi@gmail.com&password=Password",
+					"host": [
+						"{{api_url}}"
+					],
+					"path": [
+						"api",
+						"auth",
+						"register"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "mostfaswaisi93"
+						},
+						{
+							"key": "email",
+							"value": "mostfaswaisi@gmail.com"
+						},
+						{
+							"key": "password",
+							"value": "Password"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{api_url}}/api/auth/login?email=mostfaswaisi@gmail.com&password=Password",
+					"host": [
+						"{{api_url}}"
+					],
+					"path": [
+						"api",
+						"auth",
+						"login"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "mostfaswaisi@gmail.com"
+						},
+						{
+							"key": "password",
+							"value": "Password"
+						},
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user-profile",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{api_url}}/api/auth/user-profile?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9uZXctYXBpLnRlc3RcL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MzI1MjA5MDksImV4cCI6MTYzMjUyNDUwOSwibmJmIjoxNjMyNTIwOTA5LCJqdGkiOiJZM3dsNDRHaTNLQjVCT0hTIiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.jKv8S8slnw3b-m1ZVFFhx3PNyBYmcxBnmKitneQWw18",
+					"host": [
+						"{{api_url}}"
+					],
+					"path": [
+						"api",
+						"auth",
+						"user-profile"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9uZXctYXBpLnRlc3RcL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MzI1MjA5MDksImV4cCI6MTYzMjUyNDUwOSwibmJmIjoxNjMyNTIwOTA5LCJqdGkiOiJZM3dsNDRHaTNLQjVCT0hTIiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.jKv8S8slnw3b-m1ZVFFhx3PNyBYmcxBnmKitneQWw18"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "logout",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{api_url}}/api/auth/logout?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9uZXctYXBpLnRlc3RcL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MzI1MjEzMzAsImV4cCI6MTYzMjUyNDkzMCwibmJmIjoxNjMyNTIxMzMwLCJqdGkiOiI3RXB2TkJNSlgzelRSeVM0Iiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.xl_luL3mr5Tf4TV_sf0bRsDZotasRyjzwJb9Z4NCo0M",
+					"host": [
+						"{{api_url}}"
+					],
+					"path": [
+						"api",
+						"auth",
+						"logout"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9uZXctYXBpLnRlc3RcL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MzI1MjEzMzAsImV4cCI6MTYzMjUyNDkzMCwibmJmIjoxNjMyNTIxMzMwLCJqdGkiOiI3RXB2TkJNSlgzelRSeVM0Iiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.xl_luL3mr5Tf4TV_sf0bRsDZotasRyjzwJb9Z4NCo0M"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "refresh",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{api_url}}/api/auth/refresh?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9uZXctYXBpLnRlc3RcL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MzI1MjA5MDksImV4cCI6MTYzMjUyNDUwOSwibmJmIjoxNjMyNTIwOTA5LCJqdGkiOiJZM3dsNDRHaTNLQjVCT0hTIiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.jKv8S8slnw3b-m1ZVFFhx3PNyBYmcxBnmKitneQWw18",
+					"host": [
+						"{{api_url}}"
+					],
+					"path": [
+						"api",
+						"auth",
+						"refresh"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9uZXctYXBpLnRlc3RcL2FwaVwvYXV0aFwvbG9naW4iLCJpYXQiOjE2MzI1MjA5MDksImV4cCI6MTYzMjUyNDUwOSwibmJmIjoxNjMyNTIwOTA5LCJqdGkiOiJZM3dsNDRHaTNLQjVCT0hTIiwic3ViIjoyLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.jKv8S8slnw3b-m1ZVFFhx3PNyBYmcxBnmKitneQWw18"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "api_url",
+			"value": "http://new-api.test"
+		}
+	]
+}
