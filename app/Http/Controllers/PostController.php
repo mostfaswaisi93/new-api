@@ -4,19 +4,23 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\StorePostRequest;
 use App\Models\Post;
+use http\Env\Request;
 
 class PostController extends Controller
 {
+
     public function index()
     {
         $posts = Post::get();
         return view('posts.index', compact('posts'));
     }
 
+
     public function create()
     {
         return view('posts.create');
     }
+
 
     public function store(StorePostRequest $request)
     {
@@ -28,16 +32,19 @@ class PostController extends Controller
         }
     }
 
+
     public function show(Post $post)
     {
         //
     }
+
 
     public function edit($id)
     {
         $post = Post::findorFail($id);
         return view('posts.edit', compact('post'));
     }
+
 
     public function update(StorePostRequest $request, $id)
     {
@@ -55,6 +62,7 @@ class PostController extends Controller
         }
 
     }
+
 
     public function destroy($id)
     {

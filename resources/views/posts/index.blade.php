@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('title')
-MoraSoft | Posts
+mostfaswaisi93 | Posts
 @endsection
 
 @section('content')
