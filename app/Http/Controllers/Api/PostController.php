@@ -4,13 +4,15 @@ namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
 use App\Models\Post;
-use Illuminate\Http\Request;
-
 class PostController extends Controller
 {
-    public function index(){
+    use ApiResponseTrait;
+
+    public function index()
+    {
+
         $posts = Post::get();
-        $msg = ["ok"];
-        return response($posts,200,$msg);
+        return $this->apiResponse($posts, 'ok', 200);
+
     }
 }
